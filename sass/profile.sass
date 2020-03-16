@@ -1,0 +1,182 @@
+@import fonts
+@import global
+
+.container
+	display: flex
+	flex-direction: column
+	justify-content: center
+	margin: 30px auto 0
+	max-width: 935px
+	padding-bottom: 44px
+	width: 100%
+	margin-top: 100px
+
+.header
+	display: flex
+	flex-direction: row
+	background: white
+	justify-content: center
+	align-items: center
+	padding: 0 20px
+	height: 54px
+	background-color: #fff
+	border-bottom: 1px solid #dbdbdb
+	position: fixed
+	left: 0
+	top: 0
+	right: 0
+
+.nav
+	display: flex
+	justify-content: flex-end
+	width: 360px
+
+	&-bar
+		display: flex
+		flex-direction: row
+		margin: 0
+		padding: 0
+
+		&__item
+			text-decoration: none
+
+			list-style: none
+			padding: 0 8px
+
+			&__link
+				color: #262626
+
+.logo
+	margin: 0
+	width: 360px
+
+.search
+	&__input
+		background-color: #fafafa
+		text-align: center
+.profile
+	display: flex
+	flex-direction: row
+	justify-content: center
+	width: 100%
+	margin-bottom: 44px
+	&__main
+		display: flex
+		justify-content: center
+		width: 100%
+		text-align: center
+.img
+	margin-right: 90px
+
+.profile__static
+	display: grid
+	grid-template-rows: 1fr 1fr 1fr 
+	grid-template-columns: 1fr 1fr 1fr
+	&-nickname
+		font-size: 28px
+		line-height: 32px
+		color: #262626
+	&-reprofile
+		font-size: 14px
+		line-height: 18px
+		color: #262626
+		cursor: pointer
+	&-setting
+		cursor: pointer
+	&-nick
+		font-size: 16px
+		line-height: 24px
+		color: #262626		
+.profile__static > div
+	// background-color: gold
+	text-align: center
+	margin: auto
+
+.font-profile
+		font-size: 16px
+		line-height: 18px
+		color: #262626		
+.line
+	border-top: 1px solid #dbdbdb 
+	width: 100%
+	&__button
+		height: 58px
+		display: flex
+
+
+.button
+	border: none
+	outline: none
+	cursor: pointer
+	background-color: #fff
+	margin-right: 60px
+	font-size: 12px
+	line-height: 18px
+	color: #999999
+	text-transform: uppercase
+	font-weight: 600px
+	
+.button:last-child
+	margin-right: 0
+.activeBtn
+	color: #262626
+	border-top: 1px solid black
+.profile__slider
+	display: grid
+	grid-template-rows: 293px 293px 293px 
+	grid-template-columns: 293px  293px  293px 
+	grid-gap: 30px
+	&__photo
+		background-size: cover
+		width: 100%
+		height: 100%
+	&__photo:hover
+		filter: brightness(80%)
+.btnsetting
+	width: 25px
+	height: 25px
+	background-size: cover
+.user-link-img
+	width: 100%
+	height: 100%
+.profile__nickname	
+	text-decoration: none
+	color: black
+	font-size: 14px
+	line-height: 18px
+	font-weight: 600
+	margin-bottom: 2px
+	grid-area: profile__nickname
+.user-link
+	grid-area: user-link
+.slider-img
+	grid-area: slider-img
+
+
+	// начало!
+.setting-window
+	display: flex
+	z-index: 1px
+	position: absolute
+	left: 785px
+	top: 150px
+	max-width: 400px
+	height: 490px
+	border 0 solid #000000
+	background-color: white
+	border-radius: 15px
+.list
+	display: flex
+	padding: 15px
+	list-style-type: none
+	text-align: center
+	border-bottom: 1px solid black
+	justify-content: center
+.list:last-child
+	border-bottom: none
+	padding-bottom: 0
+.list:first-child
+	padding-top: 0
+.ullist
+	padding-left: 0
+

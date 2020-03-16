@@ -9,3 +9,16 @@
 .auto-height {
 	height: 100%;
 }
+.profile__li{
+	display: none;
+	grid-template-areas:
+	"user-link profile__nickname icon"
+	"slider-img slider-img slider-img";
+	grid-template-rows: 32px 1fr 10px;
+	grid-template-columns: 32px 610px 30px;
+	align-items: center;
+	grid-gap: 10px;
+	margin: 0;
+	padding-left: 120px;
+	padding-top: 10px;
+}

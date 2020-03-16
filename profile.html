@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>profile</title>
+	<!-- <link rel="stylesheet" href="/css/main.css"> -->
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/profile.css">
+	<!-- <script src="https://cdn.jsdelivr.net/npm/vue/dist/vue.js"></script>
+	 <script src="https://unpkg.com/axios/dist/axios.min.js"></script> -->
+</head>
+
+<body>
+	<div class="container__header">
+		<header class="header">
+			<h1 class="logo">REinstagram</h1>
+			<div class="search ">
+				<input type="text" class="search__input border" placeholder="Поиск">
+			</div>
+			<nav class="nav">
+				<ul class="nav-bar">
+					<li class="nav-bar__item"><a href="" class="nav-bar__link">
+							<i class="icon icon-thumbs-down"></i>
+						</a></li>
+					<li class="nav-bar__item"><a href="" class="nav-bar__link">
+							<i class="icon icon-thumbs-down"></i>
+						</a></li>
+					<li class="nav-bar__item"><a href="" class="nav-bar__link">
+							<i class="icon icon-thumbs-down"></i>
+						</a></li>
+					<li class="nav-bar__item"><a href="" class="nav-bar__link">
+							<i class="icon icon-thumbs-down"></i>
+						</a></li>
+				</ul>
+			</nav>
+		</header>
+	</div>
+	<div class="container">
+		<div class="profile">
+			<div class="img">
+				<img src="/img/profil.jpg" alt="" class="profile__img img-radius">
+			</div>
+			<div class="profile__static">
+				<div class="profile__static-nickname">white_kin9</div>
+				<button class="profile__static-reprofile border">Редактировать профиль</button>
+				<button class="profile__static-setting">
+					<img class="btnsetting" src="/img/setting.png" alt="">
+				</button>
+				<div class="profile__static-publications font-profile">13 публикаций
+				</div>
+				<div class="profile__static-followers">28 подписчиков</div>
+				<div class="profile__static-subscriptions">94 подписок</div>
+				<div class="profile__static-nick">White_king</div>
+			</div>
+		</div>
+		<div class="line"></div>
+		<div class="profile__main">
+			<div id="app3" class="line__button">
+				<button class="publications button activeBtn">Сетка</button>
+				<button class="igtv button">Список</button>
+				<button class="save button">сохраненное</button>
+				<button class="marks button">отметки</button>
+			</div>
+		</div>
+		<!-- слайдер сетки -->
+		<div class="profile__slider">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+			<img class="profile__slider__photo" src="/img/feed.jpg" alt="">
+		</div>
+
+		<!-- слайдер список -->
+		<div class="profile__li border">
+			<a href="profile.html" class="user-link">
+				<img src="/img/profil.jpg" alt="" class="user-link-img reimg img-radius">
+			</a>
+			<a href="profile.html" class="profile__nickname ">white_kin9</a>
+			<i class="icon icon-dot-3"></i>
+			<img src="/img/feed.jpg" alt="" class="slider-img">
+		</div>
+  <div class="setting-window">
+		<ul class="ullist">
+			<li class="list">Сменить пароль</li>
+			<li class="list">Instagram-визитка</li>
+			<li class="list">Приложения и сайты</li>
+			<li class="list">Уведомления</li>
+			<li class="list">Конфиденциальность и безопасность</li>
+			<li class="list">Входы в аккаунт</li>
+			<li class="list">Электронные письма от Instagram</li>
+			<li class="list">Сообщить о проблеме</li>
+			<li class="list">Выйти</li>
+			<li class="list btnback">Отмена</li>
+		</ul>
+	</div>
+
+
+	</div>
+	<script src="js/slider.js"></script>
+</body>
+
+</html>
