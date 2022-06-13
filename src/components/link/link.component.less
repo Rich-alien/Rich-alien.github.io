@@ -3,17 +3,31 @@
   align-items: center;
   cursor: pointer;
   margin-bottom: 10px;
+  height: 60px;
   &:hover {
-    .navigation-link__selected {
+  /*  .navigation-link__selected {
+      transition: 1s;
+      height: 60px;
       background: linear-gradient(180deg, #7E73FF 0%, #5B4DFF 100%);
+    }*/
+    .navigation-link__title{
+      transition: 1s;
+      color:  #7E73FF;
+    }
+    .navigation-link__icon{
+      &::ng-deep path{
+        transition: 1s;
+        fill: #7E73FF;
+      }
     }
   }
 
   &__selected {
-    height: 60px;
     width: 10px;
 
     &._active {
+      transition: 1s;
+      height: 60px;
       background: linear-gradient(180deg, #7E73FF 0%, #5B4DFF 100%);
     }
   }
