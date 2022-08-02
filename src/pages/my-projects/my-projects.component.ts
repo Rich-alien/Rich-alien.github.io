@@ -1,4 +1,5 @@
-import { Component, OnInit } from '@angular/core';
+import {Component, OnInit} from '@angular/core';
+import {LinkService} from "../../services/link.service";
 
 @Component({
   selector: 'app-my-projects',
@@ -7,9 +8,11 @@ import { Component, OnInit } from '@angular/core';
 })
 export class MyProjectsComponent implements OnInit {
 
-  constructor() { }
+  constructor(private linkService: LinkService) {
+  }
 
   ngOnInit(): void {
+    this.linkService.stateActiveLink.next('projects');
   }
 
 }
