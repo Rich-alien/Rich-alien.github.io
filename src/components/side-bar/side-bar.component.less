@@ -38,6 +38,16 @@
   }
 
   &__bar {
+    position: relative;
     margin-top: 50px;
+
+    .active-block {
+      position: absolute;
+      left: 0;
+      width: 15px;
+      transition: 1s;
+      height: 60px;
+      background: linear-gradient(180deg, #7E73FF 0%, #5B4DFF 100%);
+    }
   }
 }

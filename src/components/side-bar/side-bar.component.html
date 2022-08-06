@@ -6,21 +6,15 @@
     <div class="sub-title">Front-end developer</div>
   </div>
   <div class="navigation__bar">
-    <app-link logo="dashboard"
-              title="Dashboard"
-              [isActive]="true">
-    </app-link>
-    <app-link logo="event"
-              title="My projects">
-    </app-link>
-    <app-link logo="payments"
-              title="Payments">
-    </app-link>
-    <app-link logo="people"
-              title="People">
-    </app-link>
-    <app-link logo="settings"
-              title="Settings">
+    <div class="active-block"
+         [ngStyle]="{'top': position + 'px'}"></div>
+    <app-link *ngFor="let link of linkList"
+
+              [logo]="link.logo"
+              (click)="changeActionElement(link.id)"
+              [routerLink]="'/' + link.id"
+              [isActive]="link.isActive"
+              [title]="link.name">
     </app-link>
   </div>
 </div>
